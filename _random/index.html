@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Random</title>
+</head>
+<body>
+	<script src="http://yastatic.net/underscore/1.6.0/underscore-min.js"></script>
+	<script>
+		var list = [
+			'Валерий',
+			'Елена',
+			'Геннадий',
+			'Яна',
+			'Алена',
+			'Юрий',
+			'Оксана',
+			'Сергей',
+			'Татьяна',
+			'Павел',
+			'Юлия',
+			'Александра'
+		];
+
+		if (confirm('Start?')) {
+			alert(_.sample(list));
+		};
+	</script>
+</body>
+</html>
