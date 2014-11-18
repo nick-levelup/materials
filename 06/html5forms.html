@@ -117,6 +117,28 @@ text/plain - данные не кодируются, но пробелы зам�
 	<input type="submit" value="Send">
 </form>
 
+<hr>
+
+<h3>Fieldset + legend</h3>
+<!-- The HTML <fieldset> element is used to group several controls as well as labels (<label>) within a web form. -->
+<!-- The HTML <legend> Element (or HTML Legend Field Element) represents a caption for the content of its parent <fieldset>. -->
+<form action="test.php" method="post">
+  <fieldset>
+    <legend>Title</legend>
+    <input type="radio" name="radio" id="radio"> <label for="radio">Click me</label>
+  </fieldset>
+</form>
+
+<hr>
+
+<h3>Output</h3>
+
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" name="b" value="50" /> +
+    <input type="number" name="a" value="10" /> =
+    <output name="result"></output>
+</form>
+
 
 <hr>
 <h3>input type=color</h3>
