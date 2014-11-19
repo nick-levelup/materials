@@ -1,0 +1,124 @@
+<abbr>
+The HTML <abbr> Element (or HTML Abbreviation Element) represents an abbreviation and optionally provides a full description for it. If present, the title attribute must contain this full description and nothing else.
+<p>Tony Blair is the prime minister of the <abbr title="United Kingdom">UK</abbr></p>
+
+*****
+
+<address>
+The HTML <address> Element may be used by authors to supply contact information for its nearest <article> or <body> ancestor; in the latter case, it applies to the whole document.
+
+<address>
+	You can contact author at <a href="http://www.somedomain.com/contact">www.somedomain.com</a>.<br>
+	If you see any bugs, please <a href="mailto:webmaster@somedomain.com">contact webmaster</a>.<br>
+	You may also want to visit us:<br>
+	Mozilla Foundation<br>
+	1981 Landings Drive<br>
+	Building K<br>
+	Mountain View, CA 94043-0801<br>
+	USA
+</address>
+
+*****
+
+<base>
+The HTML Base Element (<base>) specifies the base URL to use for all relative URLs contained within a document.There is maximum one <base> element in a document.
+attr - href
+
+<base href="http://www.example.com/">
+<base target="_blank" href="http://www.example.com/">
+
+*****
+
+<button>
+The HTML <button> Element represents a clickable button.
+
+disabled
+type
+    The type of the button. Possible values are:
+
+        "submit": The button submits the form data to the server. This is the default if the attribute is not specified, or if the attribute is dynamically changed to an empty or invalid value.
+        "reset": The button resets all the controls to their initial values.
+        "button": The button has no default behavior. It can have client-side scripts associated with the element's events, which are triggered when the events occur.
+
+<button name="button">Click me</button>
+
+
+*****
+<canvas>
+The HTML <canvas> Element can be used to draw graphics via scripting (usually JavaScript).
+<canvas id="canvas" width="300" height="300">
+  Sorry, your browser doesn't support the &lt;canvas&gt; element.
+</canvas>
+
+
+*****
+<link>
+The HTML Link Element (<link>) specifies relationships between the current document and an external resource. Possible uses for this element include defining a relational framework for navigation. This Element is most used to link to style sheets.
+<link href="style.css" rel="stylesheet" type="text/css" media="all">
+
+
+*****
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter -->
+<meter>
+The HTML <meter> Element represents either a scalar value within a known range or a fractional value.
+<p>Heat the oven to <meter min="200" max="500" value="350">350 degrees</meter>.</p>
+
+*****
+<noscript>
+
+The HTML <noscript> Element defines a section of html to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser.
+
+<noscript>
+  <!-- anchor linking to external file -->
+  <a href="http://www.mozilla.com/">External Link</a>
+</noscript>
+<p>Rocks!</p>
+
+*****
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup -->
+<optgroup>
+In a Web form, the HTML <optgroup> element  creates a grouping of options within a <select> element.
+
+<select>
+  <optgroup label="Group 1">
+    <option>Option 1.1</option>
+  </optgroup> 
+  <optgroup label="Group 2">
+    <option>Option 2.1</option>
+    <option>Option 2.2</option>
+  </optgroup>
+  <optgroup label="Group 3" disabled>
+    <option>Option 3.1</option>
+    <option>Option 3.2</option>
+    <option>Option 3.3</option>
+  </optgroup>
+</select>
+
+*****
+<output>
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" name="b" value="50" /> +
+    <input type="number" name="a" value="10" /> =
+    <output name="result"></output>
+</form>
+
+
+*****
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress -->
+<progress>
+The HTML <progress> Element is used to view the completion progress of a task. While the specifics of how it's displayed is left up to the browser developer, it's typically displayed as a progress bar. Javascript can be used to manipulate the value of progress bar.
+
+<progress value="70" max="100">70 %</progress>
+
+*****
+<time>
+The HTML <time> element represents either a time on a 24-hour clock or a precise date in the Gregorian calendar (with optional time and timezone information).
+<p>The concert took place on <time datetime="2001-05-15 19:00">May 15</time>.</p>
+
+*****
+The HTML <script> element is used to embed or reference an executable script within an HTML or XHTML.
+
+*****
+The HTML <style> element contains style information for a, or a part of. The specific style information is contained inside of this element, usually in the CSS.
+
+*****

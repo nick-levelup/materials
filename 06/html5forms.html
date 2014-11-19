@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 Forms</title>
+</head>
+<body>
+
+<!-- автозаполнение форм, если в браузере автозаполнение отключено, то атрибут не работает -->
+<h3>autocomplete form</h3>
+
+<h4>on</h4>
+<form action="http://google.com.ua" method="GET" autocomplete="on">
+	<label>Поиск: <input type="text" name="q"></label>
+	<input type="submit" value="Send">
+</form>
+
+<h4>off</h4>
+<form action="http://google.com.ua" method="GET" autocomplete="off">
+	<label>Поиск: <input type="text" name="q"></label>
+	<input type="submit" value="Send">
+</form>
+
+<hr>
+
+<!-- автозаполнение для поля -->
+<h3>autocomplete input</h3>
+
+<h4>on</h4>
+<form action="http://google.com.ua" method="GET">
+	<label>Поиск: <input type="text" name="q" autocomplete="on"></label>
+	<input type="submit" value="Send">
+</form>
+
+<h4>off</h4>
+<form action="http://google.com.ua" method="GET">
+	<label>Поиск: <input type="text" name="q" autocomplete="off"></label>
+	<input type="submit" value="Send">
+</form>
+
+<hr>
+
+<!-- автофокус для поля -->
+<h3>autofocus input</h3>
+
+<form action="http://google.com.ua" method="GET">
+	<label>Поиск: <input type="text" name="q" autofocus></label>
+	<input type="submit" value="Send">
+</form>
+
+<hr>
+
+<!--
+***form="idName"
+связывает тег input, с формой по атрибуту id="idName", при условии что тег input находится вне формы,
+***formaction="URL"
+указывает на адрес программы которая будет обрабатывать данные введённые в тег input, аналогичен атрибуту action=" " у тега form,
+***formenctype=" "
+указывает на способ кодировния данных при их отправки на сервер, аналогичен атрибуту enctype=" ", у тега form, имеет следующие значения:
+application/x-www-form-urlencoded - не латинские символы кодируются их шестнадцатеричными кодами, пробелы заменяются знаком +, является значением по умолчанию,
+multipart/form-data - данные не кодируются,
+text/plain - данные не кодируются, но пробелы заменяются знаком +,
+***formmethod="get/post" - указывает каким методом отправить данные, post или get,
+***formnovalidate="formnovalidate" - отключает встроенную проверку данных, аналогичен атрибуту novalidate=" " у тега form
+***formtarget="имя окна/_blank/_self/_parent/_top" - указывет на окно в которое будет загружаться, результат обработки данных, аналогичен атрибуту target=" " у тега form -->
+
+<h3>Аттрибуты для поля, если поле надо связать с формой</h3>
+<ul>
+	<li>form="idName"</li>
+	<li>formaction="URL""</li>
+	<li>formenctype=" "</li>
+	<li>fformmethod="GET/POST"</li>
+	<li>formnovalidate="formnovalidate"</li>
+	<li>formtarget="имя окна/_blank/_self/_parent/_top</li>
+</ul>
+
+<hr>
+
+<h3>list, datalist</h3>
+
+<form action="http://google.com.ua" method="GET">
+	<label>Поиск: <input list="datalist1" type="text" name="q"></label>
+	<input type="submit" value="Send">
+	<datalist id="datalist1">
+		<option value="lorem">Тест</option>
+		<option value="loremz">Тестик</option>
+		<option value="22">Значение</option>
+		<option value="name">name</option>
+	</datalist>
+</form>
+
+<hr>
+
+<!-- поле только для чтения -->
+<h3>readonly</h3>
+<form>
+	<label>Не изменять! <input readonly type="text" name="q" value="Меня можно только скопировать"></label>
+</form>
+
+<hr>
+
+<!-- объязательное поле -->
+<h3>required</h3>
+
+<form action="http://google.com.ua" method="GET">
+	<label>Поиск: <input required type="text" name="q"></label>
+	<input type="submit" value="Send">
+</form>
+
+<hr>
+
+<h3>pattern</h3>
+
+<form action="http://google.com.ua" method="GET">
+	<label>Имя <input pattern="[a-zA-Z0-9]+" type="text" name="q"></label>
+	<label>6 латинских букв <input title="6 латинских букв" pattern="[A-Za-z]{6,}" type="text" name="q"></label>
+	<input type="submit" value="Send">
+</form>
+
+<hr>
+
+<h3>Fieldset + legend</h3>
+<!-- The HTML <fieldset> element is used to group several controls as well as labels (<label>) within a web form. -->
+<!-- The HTML <legend> Element (or HTML Legend Field Element) represents a caption for the content of its parent <fieldset>. -->
+<form action="test.php" method="post">
+  <fieldset>
+    <legend>Title</legend>
+    <input type="radio" name="radio" id="radio"> <label for="radio">Click me</label>
+  </fieldset>
+</form>
+
+<hr>
+
+<h3>Output</h3>
+
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" name="b" value="50" /> +
+    <input type="number" name="a" value="10" /> =
+    <output name="result"></output>
+</form>
+
+
+<hr>
+<h3>input type=color</h3>
+<input type="color">
+
+<hr>
+<h3>input type=date</h3>
+<input type="date">
+
+<hr>
+<h3>input type=datetime</h3>
+<input type="datetime">
+
+<hr>
+<h3>input type=datetime-local</h3>
+<input type="datetime-local">
+
+<hr>
+<h3>input type=time</h3>
+<input type="time">
+
+<hr>
+<h3>input type=email</h3>
+<input type="email">
+
+<hr>
+<h3>input type=email novalidate</h3>
+<form action="" novalidate>
+	<input type="email">
+</form>
+
+<hr>
+<h3>input type=month</h3>
+<input type="month">
+
+<hr>
+<h3>input type=week</h3>
+<input type="week">
+
+<hr>
+<h3>input type=number</h3>
+<input type="number" max="10" min="2" step="0.5" value="2">
+
+<hr>
+<h3>input type=range</h3>
+<input type="range">
+
+<hr>
+<h3>input type=search</h3>
+<input type="search">
+
+<hr>
+<h3>input type=tel</h3>
+<input type="tel">
+
+<hr>
+<h3>input type=url</h3>
+<input type="url">
+
+
+</body>
+</html>
