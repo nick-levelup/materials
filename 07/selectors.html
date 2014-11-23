@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Selectors</title>
+</head>
+<body>
+	<h1>CSS Selectors</h1>
+	<cite>Resources <a target="_blank" href="http://www.quirksmode.org/css/selectors/">www.quirksmode.org</a> and <a target="_blank" href="http://kimblim.dk/css-tests/selectors/">kimblim.dk</a></cite>
+	<hr>
+
+	<h2>Core CSS Selectors</h2>
+
+	<h3>Е (Element)</h3>
+	<cite>Matches any E element (i.e., an element of type E). <a target="_blank" href="http://codepen.io/anon/pen/raVBpr">Example</a></cite>
+
+	<h3>Е F</h3>
+	<cite>Matches any F element that is a descendant of an E element. <a target="_blank" href="http://codepen.io/anon/pen/vEOBRE">Example</a></cite>
+
+	<h3>E.classname</h3>
+	<cite>Matches the element E with the class attribute "classname". <a target="_blank" href="http://codepen.io/anon/pen/bNdbLq">Example</a></cite>
+
+	<h3>E#id</h3>
+	<cite>Matches the element E with the id attribute "id". <a target="_blank" href="http://codepen.io/anon/pen/ogXvdK">Example</a></cite>
+
+	<h3>E:active</h3>
+	<cite>The :active pseudo-class applies while an element is being activated by the user. For example, between the times the user presses the mouse button and releases it. <a target="_blank" href="http://codepen.io/anon/pen/azOoKX">Example</a></cite>
+
+	<h3>E:visited</h3>
+	<cite>The :link pseudo-class applies to links that have not yet been visited. The :visited pseudo-class applies once the link has been visited by the user. <a target="_blank" href="http://codepen.io/anon/pen/azOoKX">Example</a></cite>
+
+	<h3>E:first-line</h3>
+	<cite>Matches the element E with the id attribute "id". <a target="_blank" href="http://codepen.io/anon/pen/azOoKX">Example</a></cite>
+
+	<h3>E:first-letter</h3>
+	<cite>Matches the element E with the id attribute "id". <a target="_blank" href="http://codepen.io/anon/pen/azOoKX">Example</a></cite>
+	<hr>
+
+	<h2>CSS 2.1 Selectors</h2>
+
+	<h3>*</h3>
+	<cite>Matches any element. <a target="_blank" href="http://codepen.io/anon/pen/jEPNQY">Example</a></cite>
+
+	<h3>E > F</h3>
+	<cite>Matches any F element that is a child of an element E. <a target="_blank" href="http://codepen.io/anon/pen/RNPbEa">Example</a></cite>
+
+	<h3>E + F</h3>
+	<cite>Matches any F element immediately preceded by a sibling element E. <a target="_blank" href="http://codepen.io/anon/pen/WbveLX">Example</a></cite>
+
+	<h3>E:first-child</h3>
+	<cite>Matches element E when E is the first child of its parent. <a target="_blank" href="http://codepen.io/anon/pen/gbpYqL">Example</a></cite>
+
+	<h3>E:hover</h3>
+	<cite>Matches E when user hovers over E. <a target="_blank" href="http://codepen.io/anon/pen/ByNBMR">Example</a></cite>
+
+	<h3>E[attr]</h3>
+	<cite>Matches any E element with the "attr" attribute set (whatever the value) <a target="_blank" href="http://codepen.io/anon/pen/WbveLX">Example</a></cite>
+
+	<h3>E[attr="name"]</h3>
+	<cite>Matches any E element whose "attr" attribute value is exactly equal to "name". <a target="_blank" href="http://codepen.io/anon/pen/WbveLX">Example</a></cite>
+
+	<h3>E[attr~="name"]</h3>
+	<cite>Matches any E element whose "attr" attribute value is a list of space-separated values, one of which is exactly equal to "name". <a target="_blank" href="http://codepen.io/anon/pen/pvJzGV">Example</a></cite>
+
+	<h3>E:before E:after</h3>
+	<cite>Generated content before/after an E element. <a target="_blank" href="http://codepen.io/anon/pen/XJbrOo">Example</a></cite>
+
+	<hr>
+</body>
+</html>
