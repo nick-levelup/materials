@@ -1,0 +1,7 @@
+- Структура, комментарии
+- CSS селекторы (CSS 2.0, CSS 2.1, CSS3)
+
+Видео по теме
+https://events.yandex.ru/lib/talks/560/
+https://events.yandex.ru/lib/talks/1367/
+https://events.yandex.ru/lib/talks/550/

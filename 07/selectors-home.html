@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selectors</title>
+	<style>
+		/* стили для задания */
+		.buttons {
+			cursor: pointer;
+			color: blue;
+			text-decoration: underline;
+		}
+		.buttons .is-active {
+			cursor: default;
+			color: red;
+			text-decoration: none;
+		}
+
+		/* пример выполнения */
+		.all * {
+			color: red;
+		}
+		.tag p {
+			color: red;
+		}
+		.li li {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<button class="remove-all">Remove all</button>
+
+	<hr>
+	<!-- значения аттрибута data-name будет пременено к тегу main как класс -->
+	<ul class="buttons">
+		<!-- /* пример выполнения */ -->
+		<li data-name="all">* {color: red}</li>
+		<li data-name="tag">p {color: red}</li>
+		<li data-name="li">li {color: red}</li>
+	</ul>
+	<hr>
+
+	<!-- Сюда будут добавляться классы из списка выше (значения аттрибута data-name) -->
+	<main>
+		<!-- тут можно вставить любую разметку -->
+		<ul>
+			<li>
+				<span>3. История создания и развития CSS</span>
+				<ul>
+					<li><span>3.1 Уровень 1 (CSS1)</span></li>
+					<li>
+						<span>3.2 Уровень 2 (CSS2)</span>
+						<ul>
+							<li><span>3.2.1 Уровень 2, ревизия 1 (CSS2.1)</span></li>
+						</ul>
+					</li>
+					<li><span>3.3 Уровень 3 (CSS3)</span></li>
+					<li><span>3.4 Уровень 4 (CSS4)</span></li>
+				</ul>
+			</li>
+		</ul>
+
+		<p>CSS — одна из широкого спектра технологий, одобренных консорциумом W3C и получивших общее название «стандарты Web» В 1990-х годах стала ясна необходимость стандартизировать Web, создать какие-то единые правила, по которым программисты и веб-дизайнеры проектировали бы сайты. Так появились языки HTML 4.01 и XHTML, и стандарт CSS.</p>
+
+		<p>В начале 1990-х различные браузеры имели свои стили для отображения веб страниц. HTML развивался очень быстро и был способен удовлетворить все существовавшие на тот момент потребности по оформлению информации, поэтому CSS не получил тогда широкого признания.</p>
+
+		<p>Термин «каскадные таблицы стилей» был предложен Хокон Виум Ли в 1994 году. Совместно с Бертом Босом он стал развивать CSS.</p>
+
+		<p>В отличие от многих существовавших на тот момент языков стиля, CSS использует наследование от родителя к потомку, поэтому разработчик может определить разные стили, основываясь на уже определенных ранее стилях.</p>
+
+		<p>В середине 1990-х Консорциум Всемирной паутины (W3C) стал проявлять интерес к CSS, и в декабре 1996 года была издана рекомендация CSS1.</p>
+	</main>
+
+	<!-- Сценарий для задания  -->
+	<script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		var $buttons = $('.buttons').find('li'),
+			$main = $('main'),
+			$removeBtn = $('.remove-all');
+
+		$removeBtn.on('click', removeAll);
+
+		$buttons.on('click', function (event) {
+			var dataClass = $(this).data('name');
+
+			removeAll();
+
+			event.preventDefault();
+
+			if(dataClass.split(' ').length > 1) { alert('remove spaces from attr value'); return;}
+			if(dataClass === '') { alert('attr value is empty'); return;}
+
+
+			$main
+				.addClass(dataClass)
+				.addClass('is-active');
+		});
+
+		function removeAll () {
+			$main.removeAttr('class');
+			$buttons.removeClass('is-active');
+		};
+	</script>
+</body>
+</html>
