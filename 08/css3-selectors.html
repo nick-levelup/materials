@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Selectors</title>
+</head>
+<body>
+	<h1>CSS Selectors</h1>
+	<cite>Resources <a target="_blank" href="http://www.quirksmode.org/css/selectors/">www.quirksmode.org</a> and <a target="_blank" href="http://kimblim.dk/css-tests/selectors/">kimblim.dk</a></cite>
+	<hr>
+
+	<h2>CSS3 Selectors</h2>
+
+	<h3>E ~ F</h3>
+	<cite>Matches any F element preceded by an E element. <a target="_blank" href="http://codepen.io/anon/pen/VYLzpQ">Example</a></cite>
+
+	<h3>E[attr^="name"]</h3>
+	<cite>Matches an E element whose "attr" attribute value begins exactly with the string "name" <a target="_blank" href="http://codepen.io/anon/pen/xbGLdr">Example</a></cite>
+
+	<h3>E[attr$="name"]</h3>
+	<cite>Matches an E element whose "attr" attribute value end exactly with the string "name" <a target="_blank" href="http://codepen.io/anon/pen/xbGLdr">Example</a></cite>
+
+	<h3>E[attr*="name"]</h3>
+	<cite>Matches an E element whose "attr" attribute value contains the substring "name" <a target="_blank" href="http://codepen.io/anon/pen/xbGLdr">Example</a></cite>
+
+	<h3>E[attr|="name"]</h3>
+	<cite>Matches any E element whose "attr" attribute value is a list of hyphen-separated values, the first being exactly equal to "name". <a target="_blank" href="http://codepen.io/anon/pen/xbGLdr">Example</a></cite>
+
+	<h3>E:root</h3>
+	<cite>Matches an E element, root of the document - in HTML this is always the HTML-element.</cite>
+
+	<h3>E:last-child</h3>
+	<cite>Matches element E when E is the last child of its parent. <a target="_blank" href="http://codepen.io/anon/pen/JodyJy">Example</a></cite>
+
+	<h3>E:empty</h3>
+	<cite>Matches an E element, that has no children, including text nodes <a target="_blank" href="http://codepen.io/anon/pen/VYLzWX">Example</a></cite>
+
+	<h3>E:target</h3>
+	<cite>Matches an E element being in the target of the referring URI <a target="_blank" href="http://codepen.io/anon/pen/WbvEOV">Example</a></cite>
+
+	<h3>E:checked</h3>h
+	<cite>A user interface element E which is checked (for instance a radio-button or checkbox) <a target="_blank" href="http://codepen.io/anon/pen/XJbaaN">Example</a></cite>
+
+	<h3>E:selection</h3>
+	<cite>Matches the portion of an E element that is currently selected/highlighted by the user. <a target="_blank" href="http://codepen.io/anon/pen/OPVjjd">Example</a></cite>
+
+	<h3>E:enabled / E:disabled</h3>
+	<cite>A user interface element E which is enabled or disabled (for instance a radio-button or checkbox)  <a target="_blank" href="http://codepen.io/anon/pen/pvJrWJ">Example</a></cite>
+
+	<h3>E:not(s)</h3>
+	<cite>Matches an E element that does not match simple selector s <a target="_blank" href="http://codepen.io/anon/pen/Kwpvyp">Example</a></cite>
+
+	<h3>E:nth-child</h3>
+	<cite>Matches an E element, the n-th child of its parent. <a target="_blank" href="http://codepen.io/anon/pen/LEVjze">Example</a></cite>
+
+	<hr>
+</body>
+</html>
