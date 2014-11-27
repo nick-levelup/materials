@@ -1,5 +1,5 @@
-- Структура, комментарии
-- CSS селекторы (CSS 2.0, CSS 2.1, CSS3)
+- CSS селекторы (CSS3)
+- Выполнить практику practice.html
 
 Видео по теме
 https://events.yandex.ru/lib/talks/560/
