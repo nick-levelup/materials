@@ -1,0 +1,4 @@
+1. Css3 селекторы css3 \materials\08\css3-selectors.html
+2. Вес селекторов.
+3. Стили по умолчанию. http://www.w3.org/TR/CSS21/sample.html
+4. Величины. http://www.htmlhelp.com/reference/css/units.html
