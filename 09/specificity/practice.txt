@@ -1,0 +1,15 @@
+1   * { }
+2   li { }
+3   li:first-line { }
+4   ul li { }
+5   ul ol+li { }
+6   h1 + *[rel=up] { }
+7   ul ol li.red { }
+8   li.red.level { }
+9   style=””
+10  p { }
+11  div p { }
+12  .sith   10 (one class selector)
+13  div p.sith { }
+14  #sith   100 (one id selector)
+15  body #darkside .sith p { }

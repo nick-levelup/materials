@@ -1,0 +1,22 @@
+[
+	{
+		"question": "get all li",
+    "answerCount": 2,
+    "answerData": [2, 4]
+	},
+	{
+    "question": "get all ul",
+    "answerCount": 1,
+    "answerData": [1]
+	},
+  {
+    "question": "get all",
+    "answerCount": 6,
+    "answerData": [1,2,3,4,5,6]
+  },
+  {
+    "question": "img that have src",
+    "answerCount": 1,
+    "answerData": [6]
+  }
+]
