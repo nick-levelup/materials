@@ -1,0 +1,18 @@
+Шрифты.
+Свойства и их значения.
+
+font-family: (Типы, гарнитуры, семейства шрифтов)
+font-size:
+font-style:
+font-weight:
+font:
+
+AT-rule @font-face
+Google font api
+Оптимизация шрифтов
+
+Практика (подключение кастомного шрифта с google api)
+
+Материалы
+https://events.yandex.ru/lib/talks/561/
+Книга. Раздел 5 Шрифт (CSS. Каскадные таблицы стилей. Подробное руководство)
