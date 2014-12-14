@@ -3,6 +3,16 @@
 3. Margin collapse
 4. margin horizontal
 5. min-height(width) max-height(width)
+6. Резиновость
+
+7. Conditional comments
+8. Вендорные префиксы
+
+9 height 100%;
+10 min-height 100%
+11 box-sizing
+
+12. inline-block box-model
 
 Видео "Основы модели визуального форматирования - Вадим Пацев"
 Книга "CSS. Каскадные таблицы стилей. Подробное руководство." Раздел 7-8
