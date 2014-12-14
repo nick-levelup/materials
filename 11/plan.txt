@@ -1,0 +1,18 @@
+Стили текста и их значения и синтаксис.
+
+line-height
+text-overflow
+text-align
+text-decoration
+text-indent
+text-shadow
+white-space
+text-transform
+letter-spacing
+word-spacing
+
+Фотошоп для верстальщика (сверстать небольшой блок текста)
+
+Где посмотреть, почитать
+Видео "Шрифт. Свойства текста - Вадим Пацев"
+Книга "CSS. Каскадные таблицы стилей. Подробное руководство." Раздел 6. Стр 157
