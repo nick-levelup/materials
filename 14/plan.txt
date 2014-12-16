@@ -1,0 +1,6 @@
+1. Плавающие элементы. Правило float
+http://codepen.io/anon/pen/zxBvrP
+http://codepen.io/anon/pen/xbOwOj
+http://codepen.io/anon/pen/GgqpNb
+http://codepen.io/anon/pen/NPrGdx
+2. Background
