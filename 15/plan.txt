@@ -1,0 +1,9 @@
+1. Свойство position
+- static
+- relative http://codepen.io/anon/pen/GgqLMj
+- absolute http://codepen.io/anon/pen/QwEPQQ
+- fixed
+
+2. Свойства left top right left
+
+3. Свойство z-index
