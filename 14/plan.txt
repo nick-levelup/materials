@@ -1,0 +1,15 @@
+1. Плавающие элементы. Правило float
+http://codepen.io/anon/pen/zxBvrP
+http://codepen.io/anon/pen/xbOwOj
+http://codepen.io/anon/pen/GgqpNb
+http://codepen.io/anon/pen/NPrGdx
+
+2. Background
+background-position: 0 0;
+background-image: url();
+background-size: ;
+background-color: #fff;
+background-repeat: ;
+background: ;
+
+3. Техника sprite
