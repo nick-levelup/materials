@@ -7,3 +7,9 @@
 2. Свойства left top right left
 
 3. Свойство z-index
+Статья:
+http://habrahabr.ru/post/166435/
+
+Видео по теме
+https://events.yandex.ru/lib/talks/1552/
+https://www.youtube.com/watch?v=eZingxnTQ90

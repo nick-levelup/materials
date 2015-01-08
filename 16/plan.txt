@@ -1,0 +1,11 @@
+1. Rules
+display: inline-block
+vertical-align
+
+2. Практика
+http://htmlacademy.ru/courses/44
+http://htmlacademy.ru/courses/45
+
+Материалы
+http://habrahabr.ru/post/161581/
+http://web-standards.ru/articles/vertical-align/

@@ -1,0 +1,33 @@
+====
+Сетки
+
+1. Сетка Чикуёнок
+ - http://chikuyonok.ru/2010/01/liquid-site-markup/
+ - http://dabblet.com/gist/4175726
+ - http://codepen.io/anon/pen/gbLjjq
+2. Сетка колонки position absolute, центральная в потоке
+ - http://dabblet.com/gist/4169729
+- http://codepen.io/anon/pen/NPbBOW
+3. Сетка прижатый футер, абсолютно спозиционированный футер и отрицательный верхний отступ
+http://codepen.io/anon/pen/JobBzp
+4. Корневая сетка, сетка без скроллов
+ - http://dabblet.com/gist/4169736
+ - http://codepen.io/anon/pen/NPbLKG
+5. Сетка inline-block
+ - http://dabblet.com/gist/4169723
+- http://codepen.io/anon/pen/JobaKB
+6. Фиксированная колонка и фиксированное меню.
+http://codepen.io/anon/pen/Pwbdbw
+7. Другие сетки/макеты http://htmlbook.ru/layout
+http://codepen.io/anon/pen/ogYPBJ
+
+Доп материалы по сеткам:
+https://www.youtube.com/watch?v=aPPx-jrmrz8
+
+Практика
+http://htmlacademy.ru/courses/65
+
+====
+CSS3 rules
+border-radius
+linear-gradient
