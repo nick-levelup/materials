@@ -1,0 +1,14 @@
+1. CSS3 generators
+2. CSS3 gradients
+linear
+radial
+3. CSS3 patterns http://lea.verou.me/css3patterns/
+4. Transition
+5. Supported properties https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
+6. Timing functions
+7. Transform
+8. CSS Lint
+--------
+Video:
+https://www.youtube.com/watch?v=mMgSEXNlX4E
+http://habrahabr.ru/company/yandex/blog/239169/
