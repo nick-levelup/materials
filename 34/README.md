@@ -18,3 +18,5 @@
   - Сравнение строк
   - fromCharCode
   - charCodeAt
+
+  ### Числа
