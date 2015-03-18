@@ -13,6 +13,7 @@ object.array = [1,2,3,4,5];
 // 2. Чтение свойства по ключу.
 object.property; // 21
 object.isObject; // true
+object.isObject1; // undefined
 
 // 3. Удаление свойства по ключу.
 delete object.isObject;
@@ -20,6 +21,7 @@ object.isObject // undefined
 
 // 4. Проверка существования свойства с определенным ключом.
 property in object // boolean
+'isObject' in object // false
 
 // 5. Доступ через квадратные скобки
 // установка
@@ -70,9 +72,34 @@ function clone(obj) {
 */
 
 /* TASK2
-Создайте функцию multiplyNumeric, которая получает объект и умножает все численные свойства на 2.
+Создайте функцию multiplyNumeric, которая получает объект и умножает
+все численные свойства на 2.
 */
 
 /* TASK3
 Создайте функцию, которая возвращает количество свойств в объекте.
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
