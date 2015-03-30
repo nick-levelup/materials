@@ -19,6 +19,7 @@ var user = {
  
 function func() {
   alert( this.firstName ); // Чему равно this?
+  // 
 }
  
 user.sayHi = func;
@@ -99,6 +100,14 @@ f("тест", 1, 2); // f выведет "тест", дальше g посчит
 f("тест2", 1, 2, 3); // f выведет "тест2", дальше g посчитает сумму "6"
 /* --------------- */
 
+
+function f() {
+
+	console.log(arguments[0]);
+
+	g.apply({}, [].slice.call(arguments, 1))
+
+}
 
 /* --------------- */
 // Каким будет результат? Почему?
