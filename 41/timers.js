@@ -109,3 +109,108 @@ var timerId = setInterval(func/code, delay[, arg1, arg2...])
 в течение которых каждые 100мс в консоли появляется очередное число.
 */
 
+
+var Popup = function (openTime, closeTime) {
+  
+  this.openTime = openTime * 1000 || 0;
+  this.closeTime = closeTime * 1000;
+
+  this.showPopup = function () {
+    $('.popup').fadeIn();
+
+    if (this.closeTime) {
+      setTimeout(this.hidePopup, this.closeTime);
+    };
+  }
+
+  this.hidePopup = function () {
+    $('.popup').fadeOut();
+  }
+
+  this.setPopup = function () {
+    var self = this;
+    
+    setTimeout(function () {
+      self.showPopup();
+    }, this.openTime);
+  }
+
+
+
+
+}
+
+
+(function(){
+  var timer = (function () {
+    var counter = 0;
+
+    return function (intervalID) {
+      console.log(++counter);
+
+      if (counter === 20) {
+        clearInterval(intervalID);
+      };
+    }
+  })()
+
+  var intervalID = setInterval(function () {
+    timer(intervalID)
+  }, 100);
+})();
+
+
+
+
+function Timer () {
+  var counter = 0,
+    self = this;
+
+  this.log = function () {
+    console.log(++counter);
+
+    if (counter < 20) {
+      self.setTime();
+    };
+  };
+
+  this.setTime = function () {
+    setTimeout(self.log, 100);
+  }
+}
+
+var obj = {
+
+  sign: '!',
+
+  sayHi: function (name) {
+    console.log(name + this.sign)
+  }
+}
+
+function z (x) {
+  console.log(x)
+}
+
+
+function delay (fn, time) {
+
+  return function () {
+    var self = this,
+      arg = arguments;
+
+    setTimeout(function () {
+      fn.apply(self, arg);
+    }, time);
+
+  }
+
+}
+
+
+delay(obj.sayHi, 1000)('Vasja') // Vasja!
+
+
+// delay(function () {
+//  obj.sayHi('Vasja')
+// }, 1000)()
