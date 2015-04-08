@@ -43,9 +43,29 @@
 
 </html>
 
+<script>
+    document.getElementsByTagName('table')[0].getElementsByTagName('label')
+    document.getElementById('age-table').getElementsByTagName('label')
+    document.querySelectorAll('table label')
+    document.querySelectorAll('#age-table label')
 
+    document.getElementsByTagName('form')[1]
+    document.getElementsByName('search-person')
+
+    var forms = document.getElementsByTagName('form')
+
+    for (var i = 0; i < forms.length; i++) {
+        if (forms[i].matches('[name=search]')) {
+            console.log(forms[i])
+        };
+    };
+
+    document.querySelectorAll('form[name=search] input:first-child')
+
+</script>
 
 <!--     Все элементы label внутри таблицы. Должно быть 3 элемента.
+
     Первую ячейку таблицы (со словом "Возраст").
     Вторую форму в документе.
     Форму с именем search, без использования её позиции в документе.
