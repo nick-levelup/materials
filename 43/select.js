@@ -40,7 +40,7 @@ document.getElementsByName('age');
 // коллекцию элементов с классом className. Находит элемент и в том
 // случае, если у него несколько классов, а искомый – один из них.
 /* === */
-document.getElementsByClassName('.container')
+document.getElementsByClassName('container')
 /* === */
 
 // elem.querySelectorAll(css)
