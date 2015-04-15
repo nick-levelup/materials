@@ -6,13 +6,27 @@ element.nodeType // 1
 // Самые важные - 1,3,8
 
 // Задача
-// Написать функцию которая принимает в параметр узел, и возвращает массив
+// Написать функцию которая принимает в параметр узел,
+// и возвращает массив
 // всех 
 // 1. дочерних текстовых узлов
 // 2. дочерних текстовых узлов рекурсивно
 
 getChildTextNodes() // []
 getTextNodes() // []
+
+function getChildTextNodes (node) {
+	var array = [];
+
+	for (var i = 0; i < node.childNodes.length; i++) {
+		if (node.childNodes[i].nodeType === 3) {
+			array.push(node.childNodes[i])
+		};
+	};
+
+	return array;
+}
+
 
 
 // Тег: nodeName и tagName
