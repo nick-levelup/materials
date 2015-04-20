@@ -27,4 +27,3 @@ elem.insertAdjacentElement(where, newElem)
 //создаёт текстовый узел из строки text и вставляет
 // его в указанное место относительно elem.
 elem.insertAdjacentText(where, text)
-

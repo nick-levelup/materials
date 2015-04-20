@@ -21,7 +21,7 @@ parentElem.appendChild(elem)
 
 // Вставляет elemв список дочерних parentElem,
 // перед элементом nextSibling.
-parentElem.insertBefore(elem.nextSibling)
+insertedElement = parentElem.insertBefore(newElement, nextSibling)
 
 
 // Удаление узлов: removeChild
