@@ -10,7 +10,7 @@
 */
 
 // 1
-event.preventDefault()
+event.preventDefault();
 
 // 2
-return false
+return false;
