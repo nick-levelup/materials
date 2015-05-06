@@ -33,4 +33,34 @@
  <li>Windows</li>
 </ul>
 
+
+// BG color === blue
+// OTHER BG COLOR === transparent
 */
+
+
+var ul = document.querySelector('ul'),
+	li = ul.querySelectorAll('li');
+
+ul.addEventListener('click', function (event) {
+	var current = event.target;
+
+	if (current.matches('.selected')) { return };
+
+	if (current.matches('li')) { console.log(1)
+	
+
+		for (var i = 0; i < li.length; i++) {
+			// li[i].classList.remove('selected');
+
+			if (li[i].classList.contains('selected')) {
+				li[i].classList.remove('selected');
+
+				break;
+			};
+		};
+
+		current.classList.add('selected')
+
+	};
+}, false)
