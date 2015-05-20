@@ -1,5 +1,8 @@
 // General Attributes
 
+/* ======================================= */
+//! .attr()
+
 $().attr();
 
 // 1. Get the value of an attribute for the first element in the set of matched elements.
@@ -64,11 +67,103 @@ $( "#greatphoto" ).attr( "title", function( i, val ) {
 
 
 /*
-1. Создать картику и добавить ей 3 аттрибута. Заголовок, ссылка, альтернативный текст
+1. РЎРѕР·РґР°С‚СЊ РєР°СЂС‚РёРєСѓ Рё РґРѕР±Р°РІРёС‚СЊ РµР№ 3 Р°С‚С‚СЂРёР±СѓС‚Р°. Р—Р°РіРѕР»РѕРІРѕРє, СЃСЃС‹Р»РєР°, Р°Р»СЊС‚РµСЂРЅР°С‚РёРІРЅС‹Р№ С‚РµРєСЃС‚
 
-2. Изменить всем картинкам ссылку. Название картинки взять из заголовка картинки. Папка images.
+2. РР·РјРµРЅРёС‚СЊ РІСЃРµРј РєР°СЂС‚РёРЅРєР°Рј СЃСЃС‹Р»РєСѓ. РќР°Р·РІР°РЅРёРµ РєР°СЂС‚РёРЅРєРё РІР·СЏС‚СЊ РёР· Р·Р°РіРѕР»РѕРІРєР° РєР°СЂС‚РёРЅРєРё. РџР°РїРєР° images.
 <img title="image.jpg">
-*/
 
 
 /* ======================================= */
+//! .prop()
+
+$('input').prop('checked');
+
+// <input type="checkbox" checked>
+$('input').attr('checked'); // ?
+$('input').prop('checked'); // ?
+
+// <input type="checkbox">
+$('input').attr('checked'); // ?
+$('input').prop('checked'); // ?
+
+// <input type="checkbox"> Рё РІС‹РґРµР»РёРј
+$('input').attr('checked'); // ?
+$('input').prop('checked'); // ?
+
+// <input type="checkbox" checked> СѓР±РµСЂРµРј РІС‹РґРµР»РµРЅРёРµ
+$('input').attr('checked'); // ?
+$('input').prop('checked'); // ?
+
+// <input type="checkbox" checked> СѓР±РµСЂРµРј РІС‹РґРµР»РµРЅРёРµ Рё РѕР±СЂР°С‚РЅРѕ РІС‹РґРµР»РёРј
+$('input').attr('checked'); // ?
+$('input').prop('checked'); // ?
+
+
+/* ======================================= */
+//! .removeAttr( attributeName )
+
+// Remove an attribute from each element in the set of matched elements.
+
+$("input").removeAttr("title");
+
+/* ======================================= */
+//! .removeProp()
+
+// Remove a property for the set of matched elements.
+
+$("input").prop("key", 123); // ?
+$("input").prop("key"); // ?
+$("input").removeProp("key"); // ?
+$("input").prop("key"); // ?
+
+
+
+
+//! .val()
+// Get the current value of the first element in the set of matched elements or
+// set the value of every matched element.
+
+// 1. Get the current value of the first element in the set of matched elements.
+
+$('select').val();
+//Get the current value of the first element in the set of matched elements.
+
+/*
+    The .val() method is primarily used to get the values of form elements such as
+    INPUT, SELECT and TEXTAREA.
+
+    In the case of SELECT elements, it returns NULL when no option is selected and
+    an ARRAY containing the value of each selected option when there is at least
+    one and it is possible to select more because the multiple attribute is present.
+*/
+
+$( "select.foo option:selected").val();
+$( "select.foo" ).val();
+
+// 2. Set the value of each element in the set of matched elements.
+
+/*
+.val( value )
+
+value
+    Type: String or Number or Array
+    A string of text, a number, or an array of strings corresponding to
+    the value of each matched element to set as selected/checked.
+
+
+function
+    Type: Function( Integer index, String value ) => String
+    A function returning the value to set. this is the current element.
+    Receives the index position of the element in the set and the old value as arguments.
+
+*/
+
+$('input').val('some value');
+
+$('input').val(function (index, currentValue) {
+    return 'some value'
+});
+
+$('input').val(function (index, currentValue) {
+    return currentValue.toUpperCase();
+});
