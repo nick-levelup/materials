@@ -91,7 +91,8 @@ $( "input[name$='letter']" )
 /*===================*/
 /*
 Attribute Contains Prefix Selector [name|=”value”]
-Selects elements that have the specified attribute with a value either equal to a given string or starting with that string followed by a hyphen (-).
+Selects elements that have the specified attribute with a value either equal to a
+given string or starting with that string followed by a hyphen (-).
 */
 $( "a[hreflang|='en']" )
 
@@ -104,10 +105,14 @@ $( "a[hreflang|='en']" )
 /*===================*/
 /*
 Attribute Not Equal Selector [name!=”value”]
-Select elements that either don’t have the specified attribute, or do have the specified attribute but not with a certain value.
+Select elements that either don’t have the specified attribute,
+or do have the specified attribute but not with a certain value.
 
 !For better performance in modern browsers, use
-$( "your-pure-css-selector" ).not( "[name='value']" )
+
 instead.
 */
 $( "input[name!='newsletter']" )
+
+$( "your-pure-css-selector" ).not( "[name='value']" )
+

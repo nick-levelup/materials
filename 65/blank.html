@@ -9,6 +9,35 @@
   <script src="https://yastatic.net/underscore/1.6.0/underscore.js"></script>
   <script src="https://yastatic.net/backbone/1.1.2/backbone.js"></script>
 
-  <script src="main.js"></script>
+  <script>
+		var Book = Backbone.Model.extend({
+
+		  initialize: function () {
+		    this.listenTo(this, 'change:title', this.titleChange);
+		    this.listenTo(this, 'change:isDone', this.isDoneChange);
+		    this.listenTo(this, 'invalid', this.dateInvalidEvent)
+		  },
+
+		  titleChange: function (model, value) {
+		  	alert(value)
+		  },
+
+		  validate: function (attr) {
+		  	if (attr.isDone !== true || attr.isDone !== false) {
+		  		return 'IS DONE NOT A BOOL'
+		  	}
+		  },
+
+		  isDoneChange: function (model, value) {
+		  	console.log(1111111111)
+		  },
+
+		  dateInvalidEvent: function (model, error) {
+		  	console.info('ERROR ' + error)
+		  }
+		});
+
+		var book = new Book;
+  </script>
 </body>
 </html>

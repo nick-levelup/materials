@@ -4,8 +4,8 @@
 // Adds the specified class(es) to each element in the set of matched elements.
 $('h1').addClass('is-active');
 $('h1').addClass('is-active is-show');
-$('h1').addClass(function (index, currentClass) {
-    return 'is-active';
+$('h1').addClass(function (i, class) {
+    return isUser ? 'is-active' : 'is-not-active';
 });
 
 // .removeClass();
@@ -13,7 +13,7 @@ $('h1').addClass(function (index, currentClass) {
 $('h1').removeClass('is-active');
 $('h1').removeClass('is-active is-show');
 $('h1').removeClass();
-$('h1').removeClass(function (index, currentClass) {
+$('h1').removeClass(function (zzzz, curr21d11entClass) {
     return 'is-active';
 });
 
@@ -34,8 +34,8 @@ $('div').toggleClass('is-active', isAdmin); // Equialent?
 
 //
 $('div').toggleClass(function (index, currentClass, state) {
-    return 'is-admin'
-}, true/false);
+    return index % 3 === 0 ? 'is-admin': 'is-active';
+}, isAdmin);
 
 // .hasClass();
 // Determine whether any of the matched elements are assigned the given class.

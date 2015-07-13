@@ -14,7 +14,8 @@ $('ul > li')
 /*
 Next Adjacent Selector (“prev + next”)
 Selects all next elements matching “next” that are immediately preceded by a sibling “prev”.
-the elements on either side of the combinator must share the same parent.
+the elements on either side of the combinator
+must share the same parent.
 */
 $('input + label')
 

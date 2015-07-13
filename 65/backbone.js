@@ -66,9 +66,17 @@ new Book({
 // initialize method
 var Book = Book.Model.extend({
 
+  urlRoot: '/myurlLLL',
+
   initialize: function () {
     console.log('instance of Book model was init');
-  }
+  },
+
+  validate: function (attributes) {
+    if (attributes.age < 18) {
+      return 'Age is to little'
+    };
+  },
 });
 
 //? Todo item

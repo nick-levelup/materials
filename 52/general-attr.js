@@ -8,7 +8,7 @@ $().attr();
 // 1. Get the value of an attribute for the first element in the set of matched elements.
 // !Gets only the first element in the matched set
 
-$('img').attr('href'); // img/img2.jpg
+$('img').attr('src'); // img/img2.jpg
 
 
 // 2. Set attributes for the set of matched elements.
@@ -27,7 +27,9 @@ value.
     A value to set for the attribute.
 */
 
-$(img).attr("title", "Photo by Kelly Clark");
+$(img)
+    .attr("title", "Photo by Kelly Clark")
+    .addClass('sasa');
 
 // 2.2 Set multiple attributes
 
@@ -67,36 +69,42 @@ $( "#greatphoto" ).attr( "title", function( i, val ) {
 
 
 /*
-1. Создать картику и добавить ей 3 аттрибута. Заголовок, ссылка, альтернативный текст
+1. Создать картику и добавить ей 3 аттрибута.
+Заголовок, ссылка, альтернативный текст
 
-2. Изменить всем картинкам ссылку. Название картинки взять из заголовка картинки. Папка images.
+<img title='time.jpg'>
+
+$img
+
+2. Изменить всем картинкам ссылку.
+Название картинки взять из заголовка картинки. Папка images.
 <img title="image.jpg">
 
 
 /* ======================================= */
 //! .prop()
 
-$('input').prop('checked');
+$('input').prop('checked'); // true/false
 
 // <input type="checkbox" checked>
-$('input').attr('checked'); // ?
-$('input').prop('checked'); // ?
+$('input').attr('checked'); // checked
+$('input').prop('checked'); // true
 
 // <input type="checkbox">
-$('input').attr('checked'); // ?
-$('input').prop('checked'); // ?
+$('input').attr('checked'); // undefined
+$('input').prop('checked'); // false
 
 // <input type="checkbox"> и выделим
-$('input').attr('checked'); // ?
-$('input').prop('checked'); // ?
+$('input').attr('checked'); // undefined
+$('input').prop('checked'); // true
 
 // <input type="checkbox" checked> уберем выделение
-$('input').attr('checked'); // ?
-$('input').prop('checked'); // ?
+$('input').attr('checked'); // checked
+$('input').prop('checked'); // false
 
 // <input type="checkbox" checked> уберем выделение и обратно выделим
-$('input').attr('checked'); // ?
-$('input').prop('checked'); // ?
+$('input').attr('checked'); // checked
+$('input').prop('checked'); // true
 
 
 /* ======================================= */
@@ -111,9 +119,9 @@ $("input").removeAttr("title");
 
 // Remove a property for the set of matched elements.
 
-$("input").prop("key", 123); // ?
-$("input").prop("key"); // ?
-$("input").removeProp("key"); // ?
+$("input").prop("key", 123); // jQuery obj
+$("input").prop("key"); // 123
+$("input").removeProp("key"); // 
 $("input").prop("key"); // ?
 
 

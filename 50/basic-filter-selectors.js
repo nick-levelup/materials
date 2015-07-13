@@ -51,7 +51,8 @@ $( "td:gt(4)" );
 
 
 // !performance
-$("your-pure-css-selector").slice(index)
+$("td").slice(4)
+$( "td:gt(4)" );
 
 
 /* =================== */
@@ -123,7 +124,7 @@ $('a:focus');
 
 // !perfomance
 $( ":focus" ); // $("*:focus")
-$( document.activeElement )
+$( document.activeElement ).filter('a')
 
 
 /* =================== */
@@ -132,6 +133,7 @@ $( document.activeElement )
 Selects all elements that are headers, like h1, h2, h3 and so on.
 */
 $( ":header" );
+$('h1,h2,...')
 
 // !perfomance
 $("your-pure-css-selector").filter(":header")
