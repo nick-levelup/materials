@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>QUnit Example</title>
+  <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.18.0.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="http://code.jquery.com/qunit/qunit-1.18.0.js"></script>
+      <script>
+      function isBelowZero (n) {
+         return n >= 0;
+      }
+      </script>
+      <script>
+      QUnit.test('My test', function (assert) {
+         
+  function Foo( x, y, z ) {
+    this.x = x;
+    this.y = y;
+    this.z = z;
+  }
+  Foo.prototype.doA = function () {};
+  Foo.prototype.doB = function () {};
+  Foo.prototype.bar = 'prototype';
+ 
+  var foo = new Foo( 1, "2", [] );
+  var bar = {
+    x : 1,
+    y : "2",
+    z : []
+  };
+  assert.deepEqual( foo, bar, "Strictly the same properties without comparing objects constructors." );
+
+      })
+      </script>
+</body>
+</html>
