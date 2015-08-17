@@ -9,32 +9,27 @@
   <div id="qunit"></div>
   <div id="qunit-fixture"></div>
   <script src="http://code.jquery.com/qunit/qunit-1.18.0.js"></script>
-      <script>
-      function isBelowZero (n) {
-         return n >= 0;
-      }
-      </script>
-      <script>
-      QUnit.test('My test', function (assert) {
-         
-  function Foo( x, y, z ) {
-    this.x = x;
-    this.y = y;
-    this.z = z;
-  }
-  Foo.prototype.doA = function () {};
-  Foo.prototype.doB = function () {};
-  Foo.prototype.bar = 'prototype';
+   <script>
+  function prettyDate(now, time){
+    var date = new Date(time || ""),
+      diff = (((new Date(now)).getTime() - date.getTime()) / 1000),
+      day_diff = Math.floor(diff / 86400);
  
-  var foo = new Foo( 1, "2", [] );
-  var bar = {
-    x : 1,
-    y : "2",
-    z : []
-  };
-  assert.deepEqual( foo, bar, "Strictly the same properties without comparing objects constructors." );
-
-      })
-      </script>
+    if ( isNaN(day_diff) || day_diff < 0 || day_diff >= 31 )
+      return;
+ 
+    return day_diff == 0 && (
+        diff < 60 && "just now" ||
+        diff < 120 && "1 minute ago" ||
+        diff < 3600 && Math.floor( diff / 60 ) +
+          " minutes ago" ||
+        diff < 7200 && "1 hour ago" ||
+        diff < 86400 && Math.floor( diff / 3600 ) +
+          " hours ago") ||
+      day_diff == 1 && "Yesterday" ||
+      day_diff < 7 && day_diff + " days ago" ||
+      day_diff < 31 && Math.ceil( day_diff / 7 ) +
+        " weeks ago";
+  }</script>
 </body>
 </html>

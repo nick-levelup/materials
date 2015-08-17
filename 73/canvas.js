@@ -14,7 +14,7 @@
 // </canvas>
 
 // <canvas id="canvas" width="300" height="300">
-//   Sorry, your browser doesn't support the &lt;canvas&gt; element.
+//   Sorry, your browser doesn't support the &lt;canvas&gt; element.+
 // </canvas>
 
 // The rendering context
@@ -33,6 +33,12 @@ if (canvas.getContext){
 } else {
   // canvas-unsupported code here
 }
+
+ctx.strokeStyle = 'black'; //#FF0000
+ctx.fillStyle = 'black'; //#00FF00
+ctx.lineCap = '' //square, round, butt
+ctx.lineJoin = '' // round, miter, bevel
+ctx.lineWidth = 15;
 
 // The grid
 // coordinate space
